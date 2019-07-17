@@ -53,6 +53,7 @@ class Owner
     dog = Dog.new(name)
     @pets[:dogs] << dog
   end  
+<<<<<<< HEAD
 
 
 #  def play_with_cats
@@ -85,5 +86,18 @@ class Owner
   
   def list_pets
     "I have #{pets[:fishes].size} fish, #{pets[:dogs].size} dog(s), and #{pets[:cats].size} cat(s)."
+=======
+  
+# Owner Instance methods #walk_dogs walks the dogs which makes the dogs' moods happy
+
+  def walk_dogs
+    @pets.each do |dog|
+     if dog == :dogs
+      puts :dogs    
+
+  end
+
+  end
+>>>>>>> 0f5e613dcf5342b39413fac4e516cc6359df91ea
   end
 end
